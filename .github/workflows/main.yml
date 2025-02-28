@@ -10,7 +10,7 @@ jobs:
     run: | 
       echo "$DOCKER_REPO"
       echo "${DOCKER_REPO}"
-      echo "{{ env.DOCKER_REPO }}"
+      echo "${{ env.DOCKER_REPO }}"
  CICDjob:
   runs-on: ubuntu-latest
   steps:
