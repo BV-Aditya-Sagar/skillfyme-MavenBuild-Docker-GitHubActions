@@ -44,5 +44,5 @@ jobs:
   steps:
   - name: Deploy the Image 
     run: |
-     docker run -d -P ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.imageName }}:latest
+     docker run -d -P ${{ env.DOCKER_REPO }}/${{ env.imageName }}:latest
      docker ps -a
